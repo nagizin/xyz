@@ -15,9 +15,13 @@ async function loadData() {
   let totalQty = 0;
   let storeSet = new Set();
   let citySet = new Set();
+  let visitSet = new Set();
 
   data.forEach((row) => {
     if (!row.Date) return;
+
+    const visitKey = row.Date + "_" + row.Location;
+    visitSet.add(visitKey);
 
     storeSet.add(row.Location);
     citySet.add(row.City);
@@ -58,8 +62,7 @@ async function loadData() {
   });
 
   document.getElementById("summary").innerHTML =
-    `신나리는 현재까지  <span class="highlight">${citySet.size}</span>개 도시의 스타벅스 매장 <span class="highlight">${storeSet.size}</span>곳을 방문하여 음료 <span class="highlight">${totalQty}</span>잔을 주문하였고, 총 <span class="highlight">${totalCost.toLocaleString()}</span>원을 지출했습니다.
-   <br> <a class="highlight_googlemap" href="https://www.google.com/maps/d/edit?mid=1R-skqjie-mGe1XhawKteWc7K6yO4NbU&usp=sharing" target="_blank">구글 지도</a>에서 보기`;
+    `신나리는 현재까지  <span class="highlight">${citySet.size}</span>개 도시의 스타벅스 매장 <span class="highlight">${storeSet.size}</span>곳을 방문하여 음료 <span class="highlight">${totalQty}</span>잔을 주문하였고, 총 <span class="highlight">${totalCost.toLocaleString()}</span>원을 지출했습니다. 총 방문 횟수는 <span class="highlight">${visitSet.size}</span>번 입니다. <a class="highlight_googlemap" href="https://www.google.com/maps/d/edit?mid=1R-skqjie-mGe1XhawKteWc7K6yO4NbU&usp=sharing" target="_blank">구글 지도</a>에서 보기`;
 }
 
 loadData();

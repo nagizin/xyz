@@ -15,9 +15,13 @@ async function loadData() {
   let totalQty = 0;
   let storeSet = new Set();
   let citySet = new Set();
+  let visitSet = new Set();
 
   data.forEach((row) => {
     if (!row.Date) return;
+
+    const visitKey = row.Date + "_" + row.Location;
+    visitSet.add(visitKey);
 
     storeSet.add(row.Location);
     citySet.add(row.City);
@@ -58,8 +62,8 @@ async function loadData() {
   });
 
   document.getElementById("summary").innerHTML =
-    `Naree has visited <span class="highlight">${storeSet.size}</span> starbucks across 
-   <span class="highlight">${citySet.size}</span> cities, ordered <span class="highlight">${totalQty}</span> beverages, and spent <span class="highlight">₩${totalCost.toLocaleString()}</span> so far. View on <a class="highlight_googlemap" href="https://www.google.com/maps/d/edit?mid=1R-skqjie-mGe1XhawKteWc7K6yO4NbU&usp=sharing" target="_blank">Google Maps </a>`;
+    `Naree has visited <span class="highlight">${storeSet.size}</span> Starbucks in 
+   <span class="highlight">${citySet.size}</span> city, ordered <span class="highlight">${totalQty}</span> beverages, and spent <span class="highlight">₩${totalCost.toLocaleString()}</span> so far — for a total of <span class="highlight">${visitSet.size}</span> visits. View on <a class="highlight_googlemap" href="https://www.google.com/maps/d/edit?mid=1R-skqjie-mGe1XhawKteWc7K6yO4NbU&usp=sharing" target="_blank">Google Maps </a>`;
 }
 
 loadData();

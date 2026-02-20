@@ -42,7 +42,7 @@ function createRandomImage() {
 
   document.body.appendChild(img);
 
-  setTimeout(createRandomImage, 7000);
+  setTimeout(createRandomImage, 10000);
 }
 
 function removeScreensaver() {
