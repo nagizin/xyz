@@ -86,13 +86,12 @@ tbody tr {
 
 footer {
   text-align: center;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   font-size: 12px;
   padding: 5px 20px;
   background-color: white;
-  border-top: 1px solid var(--green);
 }
 .highlight {
   font-weight: bold;
