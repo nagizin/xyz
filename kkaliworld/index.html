@@ -1,0 +1,1781 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon32x32.png"
+    />
+    <title>kkali's website</title>
+    <link rel="stylesheet" href="styles.css?ver=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.3.1/lazyload.min.js"></script>
+  </head>
+  <body>
+    <div id="loadingScreen" class="loading-text">
+      <span>kkali is coming...</span>
+    </div>
+
+    <div id="mainContent" style="display: none">
+      <div id="profileWrap">
+        <img class="lazy" id="profile" src="img/face.png" alt="" />
+      </div>
+      <h1 id="title"><a href="#">Welcome to KKALI's World</a></h1>
+      <div class="container" id="articlesContainer">
+        <p class="instruction">
+          <b>Name</b> Kkali Shin / <b>Born in</b> A street in Seongsu-dong,
+          Seoul / <b>Estimated Date of Birth</b> April 12, 2024 /
+          <b>Gender</b> ♀️ / <b>Weight</b> 3 kg / <b>Can Opener</b> Naree Shin /
+          <b>Enemy</b> Taelim Kim /
+          <a href="https://www.youtube.com/@kkaliworld" target="_blank">
+            Youtube</a
+          >
+        </p>
+        <div class="indexWrap">
+          <button id="sound-button" onclick="playAudio()">kkali sound ▶</button>
+          <audio id="audioPlayer" src="audio/sound-01.mp4"></audio>
+          <a class="index" id="index_article" href="#articles"
+            >kkali's Articles</a
+          >
+          <a class="index" id="index_favorite" href="#favorite"
+            >kkali's Favorite Snack</a
+          >
+          <a class="index" id="index_toy" href="#toy">kkali's Toy</a>
+          <a class="index" id="index_space" href="#space"
+            >What's in kkali's Space</a
+          >
+          <a class="index" id="index_friends" href="#friends"
+            >kkali's Friends</a
+          >
+        </div>
+
+        <nav>
+          <button onclick="showAll(true)">
+            <a href="#title">모든 깔리</a>
+          </button>
+          <button onclick="sortArticlesByDate(true)">
+            <a href="#title">최신순 깔리</a>
+          </button>
+          <button onclick="filterArticles('stray kkali')">
+            <a href="#title">#stray kkali</a>
+          </button>
+          <button onclick="filterArticles('겁쟁이 깔리')">
+            <a href="#title">#겁쟁이 깔리</a>
+          </button>
+          <button onclick="filterArticles('말썽 깔리')">
+            <a href="#title">#말썽 깔리</a>
+          </button>
+          <button onclick="filterArticles('용맹 깔리')">
+            <a href="#title">#용맹 깔리</a>
+          </button>
+          <button onclick="filterArticles('사냥꾼 깔리')">
+            <a href="#title">#사냥꾼 깔리</a>
+          </button>
+          <button onclick="filterArticles('냠냠 깔리')">
+            <a href="#title">#냠냠 깔리</a>
+          </button>
+          <button onclick="filterArticles('상팔자 깔리')">
+            <a href="#title">#상팔자 깔리</a>
+          </button>
+          <button onclick="filterArticles('쿨쿨 깔리')">
+            <a href="#title">#쿨쿨 깔리</a>
+          </button>
+          <button onclick="filterArticles('큐트 깔리')">
+            <a href="#title">#큐트 깔리</a>
+          </button>
+          <button onclick="filterArticles('궁금 깔리')">
+            <a href="#title">#궁금 깔리</a>
+          </button>
+          <button onclick="filterArticles('ㅋㅋㅋ')">
+            <a href="#title">#ㅋㅋㅋ</a>
+          </button>
+          <button onclick="filterArticles('깔리 최초')">
+            <a href="#title">#깔리 최초</a>
+          </button>
+        </nav>
+        <!-- K K A L I L O V E  -->
+
+        <h2 id="articles">✿˚⋱ kkali's Articles ⋰˚✿</h2>
+        <div class="article grid-item" data-tags="stray kkali, 말썽 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/240830.JPG" alt="" />
+          </div>
+          <div class="text-content">
+            <p>
+              퇴근 후 집에 들어가려는 순간 골목에서 후다닥. 왠 덩어리가
+              지나갔다. 처음으로 고양이를 발견한 것이다. 알고보니 우리집 화단과
+              화분을 망가트리는 고양이라고. 우리집에서 나만 몰랐던 고양이의
+              존재. 엄마 아빠와는 퍽 알고지냈던, 말썽 고양이였다.
+            </p>
+          </div>
+          <div class="date-content">2024-08-30</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="stray kkali, 겁쟁이 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/241005-01.jpg" alt="" />
+          </div>
+          <div class="text-content">
+            <p>귀여운 놈</p>
+          </div>
+          <div class="date-content">2024-10-05</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="stray kkali, 겁쟁이 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/241005-02.jpg" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>
+              이 고양이를 만나려고 동네를 틈틈이 뒤적거리고 다니던 어느 날, 이
+              녀석과 느닷없이 마주했다. 하필 츄르가 없는 날. 편의점에 급히
+              다녀오니 고양이는 사라지고 없었다.
+            </p>
+          </div>
+          <div class="date-content">2024-10-05</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="stray kkali, 겁쟁이 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-08.jpg" />
+          </div>
+          <div class="text-content">
+            <p>고양이가 다녀간 흔적. 화단의 풀이 짓눌려 있다.</p>
+          </div>
+          <div class="date-content">2024-10-08</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="stray kkali, 겁쟁이 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/241010-02.jpg" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>
+              이 고양이를 위해 매일매일 차 밑을 살피고 고양이 간식을 가방에
+              넣어다녔다. 그리고 드디어 고양이와 만났다.
+            </p>
+          </div>
+          <div class="date-content">2024-10-10</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="stray kkali, 냠냠 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-10_03.jpg" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>잘 먹는다.</p>
+          </div>
+          <div class="date-content">2024-10-10</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="stray kkali">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-11_02.jpg" alt="" />
+          </div>
+          <div class="text-content">
+            <p>
+              김태림이 고양이 사진을 몇 번 보더니 본인도 만나야겠다며 성수동에
+              왔다. 어쩐 일인지 김태림과 고양이가 쉽게 만날 수 있었다.
+            </p>
+          </div>
+          <div class="date-content">2024-10-11</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="stray kkali">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-11_04.jpg" alt="" />
+          </div>
+          <div class="text-content">
+            <p>
+              급한대로 챙겨준 고양이 밥. 종이컵은 근처 편의점 어묵바에서
+              가져왔다...
+            </p>
+          </div>
+          <div class="date-content">2024-10-11</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="stray kkali">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-11_05.jpg" alt="" />
+          </div>
+          <div class="text-content">
+            <p>그래도 도망가진 않는 고양이.</p>
+          </div>
+          <div class="date-content">2024-10-11</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="stray kkali">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-11_00.jpg" alt="" />
+          </div>
+          <div class="text-content">
+            <p>
+              ‘입에 카레 묻히고 다니네.’ 하더니 고양이에게 ‘깔리’라는 이름을
+              지어주었다.
+              <a
+                href="https://www.google.com/maps/place/%EA%B9%94%EB%A6%AC/@37.5824317,126.9993044,15z/data=!4m2!3m1!1s0x0:0xba6547bbda5c0955?sa=X&ved=1t:2428&ictx=111"
+                target="_blank"
+                >‘깔리’</a
+              >는 혜화에서 가장 평점(4.3)이 높은 인도커리 음식점으로 나와
+              김태림이 지금까지도 즐겨 가는 곳.
+            </p>
+          </div>
+          <div class="date-content">2024-10-11</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+
+        <div class="article grid-item" data-tags="stray kkali, 겁쟁이 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/241012-02.jpg" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>
+              어제와 같은 시간에 집 앞에 가보니 깔리와 만날 수 있었는데,
+              김태림은 깔리가 겨울에 얼어죽을테니 얼른 데리고 가자며 재촉했다.
+              그렇게 갑작스런 김태림의 활약으로 깔리를 작업실에 데려다 놓았다.
+              김태림은 깔리가 츄르에 정신팔린 사이 차에 태웠고, 깔리는 차 안에서
+              이리저리 날뛰며 울어댔다.
+            </p>
+          </div>
+          <div class="date-content">2024-10-12</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="stray kkali, 겁쟁이 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-12_03.jpeg" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>
+              <a
+                href="https://ko.wikipedia.org/wiki/10%EC%9B%94_12%EC%9D%BC"
+                target="_blank"
+                >깔리 납치 기념일</a
+              >을 오늘로 정해주기로 했다. 깔리는 작업실에서 가장 어두운 곳을
+              찾아 숨어들어갔다.
+            </p>
+          </div>
+          <div class="date-content">2024-10-12</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="겁쟁이 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-13.JPG" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>
+              오늘도 결국 나오지 않았다. 친구 박지연이 깔라만시라는 별명을
+              지어주었다.
+            </p>
+          </div>
+          <div class="date-content">2024-10-13</div>
+        </div>
+
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="겁쟁이 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/241014-02.JPG" alt="겁쟁이 깔리" />
+          </div>
+          <div class="text-content">
+            <p>
+              쇼파 밑에서 10시간을 버틴다. 절대 나가지 않겠다는 굳은 의지. 밤
+              열시경엔 참다 참다 나온 것 같았다. 모습을 드러내는줄 알았으나 그새
+              구석으로 숨었다.
+            </p>
+          </div>
+          <div class="date-content">2024-10-14</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="냠냠 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-15_01.jpeg" alt="냠냠" />
+          </div>
+          <div class="text-content">
+            <p>
+              삐옹 삐옹 운다. 살짝 짜준 츄르를 보고 나왔다. 무척 감격스러웠는데
+              놀랄까봐 소리를 지를 수 없었다. 잠깐이나마 만질 수 있었다.
+            </p>
+          </div>
+          <div class="date-content">2024-10-15</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="말썽 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-16_00.JPG" alt="#세탁중" />
+          </div>
+          <div class="text-content">
+            <p>화분이 쓰러져있다.</p>
+          </div>
+          <div class="date-content">2024-10-16</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="겁쟁이 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-16_01.jpg" alt="#세탁중" />
+          </div>
+          <div class="text-content">
+            <p>
+              츄르를 짜주면 한참을 울다가 나온다. 낮 열두시경 나와서 작업실을
+              돌아다니기 시작했다. 어제보다 더 큰 반경인 것이 놀랍다. 큰소리가
+              나거나 가까이 가면 호다닥 다시 구석으로 숨는다. 하수구 구멍에서
+              새어나오는 빛을 좋아하는 것 같다.
+            </p>
+          </div>
+          <div class="date-content">2024-10-16</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div
+          class="article grid-item"
+          data-tags="ㅋㅋㅋ, 겁쟁이 깔리, 깔리 최초"
+        >
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-16_02.jpg" alt="#세탁중" />
+          </div>
+          <div class="text-content">
+            <p>
+              깔리 최초 목욕. 강제로 잡아다 목욕을 시켰고, 여자 아이라는 것을
+              알게되었다. 목욕 후에 더 열받은 것 같다.
+            </p>
+          </div>
+          <div class="date-content">2024-10-16</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div
+          class="article grid-item"
+          data-tags="ㅋㅋㅋ, 겁쟁이 깔리, 깔리 최초"
+        >
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-16_03.jpg" alt="#세탁중" />
+          </div>
+          <div class="text-content">
+            <p>왜케 작냐...</p>
+          </div>
+          <div class="date-content">2024-10-16</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="말썽 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-17_01.JPG" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>흥미로워.</p>
+          </div>
+          <div class="date-content">2024-10-17</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="말썽 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-17_02.JPG" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>프린터 전원을 켜고, 도어를 열어놨다. (약간 대단하다고 생각)</p>
+          </div>
+          <div class="date-content">2024-10-17</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="겁쟁이 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-17_03.JPG" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>
+              외부 행사 때문에 며칠째 오랜시간 나가있었더니 친해질 기미가 없다.
+              겁이 많아보이는데 특히나 김태림을 경계한다. 아마도 본인을 잡아둔
+              이상한 존재라고 생각하나보다.
+            </p>
+          </div>
+          <div class="date-content">2024-10-17</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="말썽 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-18.JPG" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>갈기갈기 찢긴 고무나무와 작은 화분들을 정리하기로 했다...</p>
+          </div>
+          <div class="date-content">2024-10-18</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="겁쟁이 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-18_01.jpg" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>
+              작업실을 나서려는 순간 깔리의 시선이 느껴졌다. 나를 보러 나왔을까.
+              처음있는 일이다.
+            </p>
+          </div>
+          <div class="date-content">2024-10-18</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="말썽 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-20_01.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>쓰레기통을 헤집어 놓았다.</p>
+          </div>
+          <div class="date-content">2024-10-20</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="말썽 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-20_02.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>ㅎㅎㅎ</p>
+          </div>
+          <div class="date-content">2024-10-20</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="겁쟁이 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-22.JPG" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>
+              깔리는 아무래도 겁이 너무 많다. 당당 깔리를 만들기 위해 유튜브
+              영상을 찾아보고 있다.
+            </p>
+          </div>
+          <div class="date-content">2024-10-22</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-23.jpg" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>
+              화장실 상자의 높이가 영 낮은지 작업실이 놀라운 속도로 더러워진다.
+              김태림이 박스 높이를 수정하여 화장실을 리모델링했다.
+            </p>
+          </div>
+          <div class="date-content">2024-10-23</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="궁금 깔리, 깔리 최초">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-24.jpg" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>깔리가 컴퓨터하는 나에게 처음으로 관심을 보였다. 어머나?</p>
+          </div>
+          <div class="date-content">2024-10-24</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="말썽 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-24_01.jpg" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>
+              깔리가 방충망을 다 뜯어놨고, 나와 김태림은 모기에 뜯기고 있다.
+            </p>
+          </div>
+          <div class="date-content">2024-10-24</div>
+        </div>
+        <!-- K K A L I L O V E  -->
+        <div class="article grid-item" data-tags="">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-26.jpg" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>
+              깔리가 제법 내 자리를 맴돈다. '깔리의 마음 얻기' 승부에서 김태림을
+              이긴 것 같다.
+            </p>
+          </div>
+          <div class="date-content">2024-10-26</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-27.jpg" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>
+              깔리를 위한 웹사이트를 만들고 있다. 자기 전에도 깔리가 생각나고,
+              밖에 나와있으면 자꾸만 깔리가 생각난다. 숏폼 따위보다 깔리 영상이
+              더 중독적이다.
+            </p>
+          </div>
+          <div class="date-content">2024-10-27</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="사냥꾼 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-29_01.JPG" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>깔리에게 사냥놀이를 가르치기 시작했다.</p>
+          </div>
+          <div class="date-content">2024-10-29</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="겁쟁이 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-29_02.JPG" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>김태림을 바라보는 눈빛.</p>
+          </div>
+          <div class="date-content">2024-10-29</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="상팔자 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-29_03.JPG" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>
+              아직도 깔리는 구석에서 시간을 자주 보낸다. 주로 김태림보다는 내가
+              부르면 곧잘 나온다. 처음으로 만난 인간 동료가 나라서 그런 것
+              같기도.
+            </p>
+          </div>
+          <div class="date-content">2024-10-29</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="ㅋㅋㅋ">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-29_04.png" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>
+              <a href="https://www.instagram.com/birdcall.xyz/" target="_blank"
+                >버드콜</a
+              >
+              이지수가 명장면을 찍어주었다.
+            </p>
+          </div>
+          <div class="date-content">2024-10-29</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div
+          class="article grid-item"
+          data-tags="겁쟁이 깔리, ㅋㅋㅋ, 깔리 최초"
+        >
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-30_01.jpg" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>처음으로 병원에 다녀왔다. 몸무게는 2.5kg.</p>
+          </div>
+          <div class="date-content">2024-10-30</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="겁쟁이 깔리, ㅋㅋㅋ">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-30_02.jpg" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>
+              겁에 질린 깔리가 안쓰럽다가도 좀 웃겼다. 대체 왜 저렇게 겁이 많아.
+            </p>
+          </div>
+          <div class="date-content">2024-10-30</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-30_03.jpg" alt="고양이" />
+          </div>
+          <div class="text-content">
+            <p>
+              수의사 선생님은 깔리를 생후 6-7개월 정도로 추정하셨고, 나는 깔리의
+              생일을
+              <a
+                href="https://ko.wikipedia.org/wiki/4%EC%9B%94_12%EC%9D%BC"
+                target="_blank"
+                >4월 12일</a
+              >로 (내멋대로) 정해줬다.
+            </p>
+          </div>
+          <div class="date-content">2024-10-30</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-10-30_00.jpg" alt="똥간" />
+          </div>
+          <div class="text-content">
+            <p>
+              두 고양이
+              <a href="https://www.instagram.com/kongerangban/" target="_blank"
+                >콩, 반</a
+              >의 집사 정주윤의 나눔으로 깔리는 새로운 똥간을 얻었다.
+            </p>
+          </div>
+          <div class="date-content">2024-10-30</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="겁쟁이 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-01_01.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>깔리는 여전히 많은 시간을 숨어서 지낸다.</p>
+          </div>
+          <div class="date-content">2024-11-01</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="냠냠 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-01_02.jpg" alt="깔리밀" />
+          </div>
+          <div class="text-content">
+            <p>깔리를 위해 심은 밀에 싹이났다. 깔리가 아작 아작 먹는다.</p>
+          </div>
+          <div class="date-content">2024-11-01</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-02_00.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>털뭉치 장난감을 좋아하는 깔리</p>
+          </div>
+          <div class="date-content">2024-11-02</div>
+        </div>
+
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-02_01.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>충성</p>
+          </div>
+          <div class="date-content">2024-11-02</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-02_02.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>신깔리 적응 완료</p>
+          </div>
+          <div class="date-content">2024-11-02</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="냠냠 깔리, 큐트 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-03.jpg" />
+          </div>
+          <div class="text-content">
+            <p>츄르를 먹을 때 손을 쓰기 시작했다.</p>
+          </div>
+          <div class="date-content">2024-11-03</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-04.jpg" />
+          </div>
+          <div class="text-content">
+            <p>깔리는 자주 기지개를 켠다. 구석에 숨어있느라 뻐근하겠지.</p>
+          </div>
+          <div class="date-content">2024-11-04</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-05.jpg" />
+          </div>
+          <div class="text-content">
+            <p>깔리가 사라진 집 앞 화단에 꽃이 폈다.</p>
+          </div>
+          <div class="date-content">2024-11-05</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-05_01.jpg" />
+          </div>
+          <div class="text-content">
+            <p>깔리의 예전 화장실도 활기를 되찾았다.</p>
+          </div>
+          <div class="date-content">2024-11-05</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-04_01.jpg" />
+          </div>
+          <div class="text-content">
+            <p>으쨔</p>
+          </div>
+          <div class="date-content">2024-11-04</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리, 사냥꾼 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-04_02.jpg" />
+          </div>
+          <div class="text-content">
+            <p>
+              내가 가장 좋아하는 깔리의 표정. 사냥놀이 할 때 집중하는 표정이다.
+              드릉 드릉.
+            </p>
+          </div>
+          <div class="date-content">2024-11-04</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="사냥꾼 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-06.jpg" />
+          </div>
+          <div class="text-content">
+            <p>깔리가 사냥놀이를 즐기는 것 같다. 손을 꽤 잘 쓰는 듯.</p>
+          </div>
+          <div class="date-content">2024-11-06</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="궁금 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-07_01.jpg" />
+          </div>
+          <div class="text-content">
+            <p>가습기가 궁금해.</p>
+          </div>
+          <div class="date-content">2024-11-07</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="상팔자 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-07_02.jpg" />
+          </div>
+          <div class="text-content">
+            <p>일할 때 시선이 느껴지곤 하는데...</p>
+          </div>
+          <div class="date-content">2024-11-07</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="사냥꾼 깔리, ㅋㅋㅋ">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-11_01.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>깔리는 바스락 소리가 나는 걸 공처럼 구겨주면 좋아한다.</p>
+          </div>
+          <div class="date-content">2024-11-11</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="궁금 깔리, ㅋㅋㅋ">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-11_02.jpg" />
+          </div>
+          <div class="text-content">
+            <p>다 들어가 봐야지 모.</p>
+          </div>
+          <div class="date-content">2024-11-11</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="상팔자 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-12.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>
+              이제는 딱히 숨어있을 생각이 없나보다. 이곳저곳을 누비며 드러누워
+              있다.
+            </p>
+          </div>
+          <div class="date-content">2024-11-12</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="사냥꾼 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-14.jpg" />
+          </div>
+          <div class="text-content">
+            <p>깔리는 굴러가는 걸 좋아한다. 축구선수 시켜야하나.</p>
+          </div>
+          <div class="date-content">2024-11-14</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="냠냠 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-16.jpg" />
+          </div>
+          <div class="text-content">
+            <p>솜방망이부터 들이대.</p>
+          </div>
+          <div class="date-content">2024-11-16</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="ㅋㅋㅋ">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-17.jpg" />
+          </div>
+          <div class="text-content">
+            <p>김태림이 찍은 photogenic kkali</p>
+          </div>
+          <div class="date-content">2024-11-17</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="쿨쿨 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-18.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>
+              이제는 깔리가 구석에서 나와서 잠을 잔다. 은근히 우리를 좋아하는 것
+              같은데... 근데 이제 조금이라도 큰 소리가 나거나 인기척을 보이면
+              바로 눈을 부릅뜨는.
+            </p>
+          </div>
+          <div class="date-content">2024-11-18</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-25.jpg" />
+          </div>
+          <div class="text-content">
+            <p>깔리가 퇴근할 때마다 나와서 지켜보기 시작했다. 맴찢...</p>
+          </div>
+          <div class="date-content">2024-11-25</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-26_00.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>깔리가 나를 졸졸 따라다니기도 한다. 나 좋아하냐.</p>
+          </div>
+          <div class="date-content">2024-11-26</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="상팔자 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-26_01.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>얘 어디갔나 싶으면 내 의자에 올라가 있다.</p>
+          </div>
+          <div class="date-content">2024-11-26</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="겁쟁이 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-26_02.jpg" />
+          </div>
+          <div class="text-content">
+            <p>
+              출근해서 깔리를 찾으면 꼭 이 구석탱이에서 나온다. 누가 들어오는
+              소리가 나면 호다닥 숨는건지. 이것만은 변함이 없다.
+            </p>
+          </div>
+          <div class="date-content">2024-11-26</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="사냥꾼 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-26_03.jpg" />
+          </div>
+          <div class="text-content">
+            <p>
+              유튜브를 보고 박스 장난감을 만들었다. 간식을 숨겨주니 잘 꺼내
+              먹는다. 기특 깔리.
+            </p>
+          </div>
+          <div class="date-content">2024-11-26</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="사냥꾼 깔리, ㅋㅋㅋ">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-27_01.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>
+              김태림이 꺼끌꺼끌한 면을 좋아할거라고 하면서 라꾸라꾸를 꺼내놨다.
+              신난 깔리는 한참을 날뛰었다.
+            </p>
+          </div>
+          <div class="date-content">2024-11-27</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="사냥꾼 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-27_02.jpg" />
+          </div>
+          <div class="text-content">
+            <p>
+              어느새 깔리는 장난감도 잘 가지고 놀고, 사냥놀이도 잘 하고, 밥도 잘
+              먹고, 잠도 잘 잔다. 다만 인간이 만지는건 잘 허락하지 않는다.
+            </p>
+          </div>
+          <div class="date-content">2024-11-27</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리, ㅋㅋㅋ">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-27_03.jpg" />
+          </div>
+          <div class="text-content">
+            <p>명장면</p>
+          </div>
+          <div class="date-content">2024-11-27</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="깔리 최초">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-27_04.jpg" />
+          </div>
+          <div class="text-content">
+            <p>신깔리 인생 첫 눈</p>
+          </div>
+          <div class="date-content">2024-11-27</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="상팔자 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-27_05.jpg" />
+          </div>
+          <div class="text-content">
+            <p>폭설이 내린 날 깔리를 데려오길 참 잘했다는 생각을 했다.</p>
+          </div>
+          <div class="date-content">2024-11-27</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="궁금 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-28_01.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>
+              깔리는 여느 고양이처럼 창문을 좋아한다. 캣타워나 선반 같은걸 해줄
+              때가 된 것 같다.
+            </p>
+          </div>
+          <div class="date-content">2024-11-28</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-28_02.jpg" />
+          </div>
+          <div class="text-content">
+            <p>깔리의 얼빡샷 찍는 재미가 쏠쏠하다.</p>
+          </div>
+          <div class="date-content">2024-11-28</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="상팔자 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-29.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>
+              바쁘다는 핑계로 아직 그럴듯한 집을 마련해주지 못했는데, 날씨가 훅
+              추워졌다. 작업실에 있는 거적때기를 모아 누더기 집을 만들어주었다.
+            </p>
+          </div>
+          <div class="date-content">2024-11-29</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="상팔자 깔리, 쿨쿨 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-30_01.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>
+              추울까봐 물주머니도 따뜻하게 데워서 넣어줬다. 따뜻한지 물주머니에
+              기대서 잠을 잔다.
+            </p>
+          </div>
+          <div class="date-content">2024-11-30</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="궁금 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-11-30_02.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>다 들어가 봐야지 모.</p>
+          </div>
+          <div class="date-content">2024-11-30</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-01_01.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>나를 슬쩍 비비고 간다. 나 좋아하네.</p>
+          </div>
+          <div class="date-content">2024-12-01</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-01_02.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>고양이 털... 아 돈 케어...</p>
+          </div>
+          <div class="date-content">2024-12-01</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리, 상팔자 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-03.jpg" />
+          </div>
+          <div class="text-content">
+            <p>
+              깔리가 이제 대놓고 나와서 드러눕거나 요상한 자세를 선보이기
+              시작했다.
+            </p>
+          </div>
+          <div class="date-content">2024-12-03</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-04.JPG" />
+          </div>
+          <div class="text-content">
+            <p>
+              아침에 출근하면 자다 깬 얼굴로 마중을 나왔다. 그동안은 숨어있던
+              깔리를 몇 번이고 불러야만 나왔는데. 장족의 발전. 감동실화.
+            </p>
+          </div>
+          <div class="date-content">2024-12-04</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="궁금 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-04_01.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>패딩이 궁금해</p>
+          </div>
+          <div class="date-content">2024-12-04</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-04_02.JPG" />
+          </div>
+          <div class="text-content">
+            <p>
+              김태림이 다람쥐 영상을 틀어놓았다. 다람쥐가 나올 때 집중해서 보는
+              깔리 뒷통수가 미치게 귀엽다. 다람쥐를 찾는건지 TV 뒷쪽을 살피기도
+              한다. 나라는 시끄럽지만 깔리의 일상은 너무나 무해해...
+            </p>
+          </div>
+          <div class="date-content">2024-12-04</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="깔리 최초">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-05_01.jpg" />
+          </div>
+          <div class="text-content">
+            <p>깔리 최초 셀카</p>
+          </div>
+          <div class="date-content">2024-12-05</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-05_02.jpg" />
+          </div>
+          <div class="text-content">
+            <p>
+              <a href="https://www.instagram.com/studio_dogu" target="_blank"
+                >스튜디오 도구</a
+              >
+              재고 관리팀
+            </p>
+          </div>
+          <div class="date-content">2024-12-05</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="ㅋㅋㅋ">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-05_03.JPG" />
+          </div>
+          <div class="text-content">
+            <p>비켜줄래?</p>
+          </div>
+          <div class="date-content">2024-12-05</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-05_04.jpg" />
+          </div>
+          <div class="text-content">
+            <p>김태림과 신깔리 서로를 견제중</p>
+          </div>
+          <div class="date-content">2024-12-05</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-06.jpg" />
+          </div>
+          <div class="text-content">
+            <p>
+              깔리가 퇴근할 때마다 어딜 가냐는 듯이 쳐다보는데 마음이 찌릿하다.
+              깔리랑 하루 종일 같이 있고파.
+            </p>
+          </div>
+          <div class="date-content">2024-12-06</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div
+          class="article grid-item"
+          data-tags="큐트 깔리, 쿨쿨 깔리, 상팔자 깔리"
+        >
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-07.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>잠을 귀엽게도 자는군</p>
+          </div>
+          <div class="date-content">2024-12-07</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-07_01.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>
+              꼬리를 아주 야무지게 감아 놓는 깔리. 이 꼬리말기 자세도 자주
+              선보인다.
+            </p>
+          </div>
+          <div class="date-content">2024-12-07</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-07_02.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>
+              털실에 엄청난 반응을 보였다. 다른 좋은 장난감은 제쳐두고 실뭉치
+              따위를 가장 좋아했네.
+            </p>
+          </div>
+          <div class="date-content">2024-12-07</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="ㅋㅋㅋ, 상팔자 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-07_03.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>가끔 자세가 좀...</p>
+          </div>
+          <div class="date-content">2024-12-07</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리, 깔리 최초">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-07_04.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>깔리와 캔따개(본인)의 최초 셀카</p>
+          </div>
+          <div class="date-content">2024-12-07</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-07_05.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>교감</p>
+          </div>
+          <div class="date-content">2024-12-07</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="겁쟁이 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-07_06.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>나에게 파고든 것 같지만 도망가는 애 잡아서 빗질 하는 중이다.</p>
+          </div>
+          <div class="date-content">2024-12-07</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="ㅋㅋㅋ, 상팔자 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-08_01.jpg" />
+          </div>
+          <div class="text-content">
+            <p>아잇 깜짝이야.</p>
+          </div>
+          <div class="date-content">2024-12-08</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="궁금 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-08_02.jpg" />
+          </div>
+          <div class="text-content">
+            <p>돌돌이가 궁금해</p>
+          </div>
+          <div class="date-content">2024-12-08</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-08_03.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>
+              어깨가 좁은데 배가 빵빵해진 요즘의 체형. 깔리가 뚱뚱한건지
+              아닌건지, 인간 둘은 밥을 제대로 주고 있는건지 아닌건지 도대체
+              모르겠다. 깔리는 식탐이 너무나도 대단해서 매일 시도 때도 없이
+              배고프다고 울어댄다.
+            </p>
+          </div>
+          <div class="date-content">2024-12-08</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="상팔자 깔리, 사냥꾼 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-08_04.jpg" />
+          </div>
+          <div class="text-content">
+            <p>
+              기온이 영하로 떨어지면서 제법 추워졌다. 깔리 집에 새 방석과
+              전기장판을 놓아 주었다.
+            </p>
+          </div>
+          <div class="date-content">2024-12-08</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="말썽 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-08.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>신발도 바닥도 다 뜯어놓지만 아 돈 케어...</p>
+          </div>
+          <div class="date-content">2024-12-08</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="궁금 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-09_01.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>빗자루가 궁금해</p>
+          </div>
+          <div class="date-content">2024-12-09</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="쿨쿨 깔리, 상팔자 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-09.jpg" />
+          </div>
+          <div class="text-content">
+            <p>자고 일어난 깔리. 더 자.</p>
+          </div>
+          <div class="date-content">2024-12-09</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-10_00.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>
+              깔리는 여전히 인간 손이 닿는걸 싫어한다. 하루에 딱 한 번 얼굴과
+              목덜미 만지는걸 허락해주는데, 그게 언제냐면 아침에 반갑다고 마중
+              나왔을 때. 이 때만 잠시 깔리를 안고 만져볼 수 있다.
+            </p>
+          </div>
+          <div class="date-content">2024-12-10</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="겁쟁이 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-10_03.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>인생 두 번째 병원. 주사 꽂히고 열받았나 본데.</p>
+          </div>
+          <div class="date-content">2024-12-10</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="겁쟁이 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-10_02.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>동공이 커졌다는건 겁에 질렸다는 것</p>
+          </div>
+          <div class="date-content">2024-12-10</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="겁쟁이 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-10_04.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>이런 눈은 또 처음 봤네. 그렇게 무서왕?</p>
+          </div>
+          <div class="date-content">2024-12-10</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="겁쟁이 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-10_01.jpg" />
+          </div>
+          <div class="text-content">
+            <p>
+              어느새 3kg가 된 깔리. 통통한 편이라는 진단을 받았다. 그럼
+              그렇지... 간식은 이제부터 반으로 줄이기로. 그나저나 병원에서만 볼
+              수 있는 긴장한 표정이 몹시 웃기다.
+            </p>
+          </div>
+          <div class="date-content">2024-12-10</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리, 쿨쿨 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-10_05.jpg" />
+          </div>
+          <div class="text-content">
+            <p>한쪽 팔 빼놓고 자는 모습 so cute.</p>
+          </div>
+          <div class="date-content">2024-12-10</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="ㅋㅋㅋ">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-10_06.jpg" />
+          </div>
+          <div class="text-content">
+            <p>순간이동</p>
+          </div>
+          <div class="date-content">2024-12-10</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="ㅋㅋㅋ, 사냥꾼 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-12_01.jpg" />
+          </div>
+          <div class="text-content">
+            <p>우다다</p>
+          </div>
+          <div class="date-content">2024-12-12</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="ㅋㅋㅋ, 사냥꾼 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-12_02.jpg" />
+          </div>
+          <div class="text-content">
+            <p>우다다</p>
+          </div>
+          <div class="date-content">2024-12-12</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="ㅋㅋㅋ, 상팔자 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-12_03.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>자세가 좀...</p>
+          </div>
+          <div class="date-content">2024-12-12</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="상팔자 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-12_04.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>
+              오늘따라 유난히 깔리 몸집이 크고 길어보인다. 언제 이렇게 컸대.
+            </p>
+          </div>
+          <div class="date-content">2024-12-12</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="궁금 깔리, 큐트 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-13_01.jpg" />
+          </div>
+          <div class="text-content">
+            <p>
+              이 표정이 너무 좋다. 궁금해 궁금해 너무 궁금해서 못 참겠어 표정.
+            </p>
+          </div>
+          <div class="date-content">2024-12-13</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="궁금 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-13.jpg" />
+          </div>
+          <div class="text-content">
+            <p>
+              <a href="https://www.instagram.com/oluolu.love/" target="_blank"
+                >올루올루</a
+              >의 메모패드가 궁금해
+            </p>
+          </div>
+          <div class="date-content">2024-12-13</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="ㅋㅋㅋ">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-14_00.jpg" />
+          </div>
+          <div class="text-content">
+            <p>
+              부쩍 깔리가 무는 일이 잦아졌다. 놀아달라고 무는건지. 발가락과
+              손가락을 물고 솜방망이를 날린다. 물론 전혀 아프진 않다. 하지만
+              문제는 성묘가 되어 물면 상처가 날 수 있다고...(!) 이걸 어째
+              고쳐야할지 고민이다. 그만 물어.
+            </p>
+          </div>
+          <div class="date-content">2024-12-14</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="궁금 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-14.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>그렇게 아련하게 쳐다보면 내가 어떻게 가냐고...</p>
+          </div>
+          <div class="date-content">2024-12-14</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-15_01.jpg" />
+          </div>
+          <div class="text-content">
+            <p>캔따개랑 노는게 제일 좋아</p>
+          </div>
+          <div class="date-content">2024-12-15</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div
+          class="article grid-item"
+          data-tags="큐트 깔리, ㅋㅋㅋ, 사냥꾼 깔리"
+        >
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-15_02.jpg" />
+          </div>
+          <div class="text-content">
+            <p>끈이란 끈은 다 좋아</p>
+          </div>
+          <div class="date-content">2024-12-15</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div
+          class="article grid-item"
+          data-tags="큐트 깔리, 상팔자 깔리, 사냥꾼 깔리"
+        >
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-15_03.jpg" />
+          </div>
+          <div class="text-content">
+            <p>털실: 최고의 놀잇감</p>
+          </div>
+          <div class="date-content">2024-12-15</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="ㅋㅋㅋ, 상팔자 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-16_01.jpg" />
+          </div>
+          <div class="text-content">
+            <p>
+              내 옆에서 뒹굴 뒹굴 놀거나 그러다 잠을 자거나 식빵을 굽거나 하여간
+              근처에서 맴도는 존재가 있어 행복한 캔따개의 삶.
+            </p>
+          </div>
+          <div class="date-content">2024-12-16</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="ㅋㅋㅋ, 상팔자 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-16_02.jpg" />
+          </div>
+          <div class="text-content">
+            <p>좋아보여.</p>
+          </div>
+          <div class="date-content">2024-12-16</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="궁금 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-17_01.jpg" />
+          </div>
+          <div class="text-content">
+            <p>김태림이 궁금해</p>
+          </div>
+          <div class="date-content">2024-12-17</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="큐트 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-17.jpg" />
+          </div>
+          <div class="text-content">
+            <p>굳이 내 책상 아래에 있어야 함</p>
+          </div>
+          <div class="date-content">2024-12-17</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="stray kkali">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-18.jpg" />
+          </div>
+          <div class="text-content">
+            <p>
+              깔리가 있던 화단은 겨울나기에 돌입했고, 작은 수조의 물은 꽁꽁
+              얼었다.
+            </p>
+          </div>
+          <div class="date-content">2024-12-18</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="ㅋㅋㅋ">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-18_01.jpg" />
+          </div>
+          <div class="text-content">
+            <p>깔리랑 사진 찍기</p>
+          </div>
+          <div class="date-content">2024-12-18</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="ㅋㅋㅋ">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-18_02.jpg" />
+          </div>
+          <div class="text-content">
+            <p>표정이 아주 투명해서 좋기는 한데.</p>
+          </div>
+          <div class="date-content">2024-12-18</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="냠냠 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-18_03.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>
+              새로 심은 밀에 싹이 났다. 가릴 것 없이 다 잘 먹는 먹짱 깔리. 잘
+              먹는게 좋은거랬어.
+            </p>
+          </div>
+          <div class="date-content">2024-12-18</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="사냥꾼 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-18_04.jpg" />
+          </div>
+          <div class="text-content">
+            <p>
+              요즘은 김태림에 대한 경계가 풀어졌는지 김태림 발꿈치를 슬쩍 치고
+              또 가끔은 따라다닌다. 참 오래도 걸린다. 분명 깔리를 구한 건
+              김태림인데.
+            </p>
+          </div>
+          <div class="date-content">2024-12-18</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+        <div class="article grid-item" data-tags="상팔자 깔리">
+          <div class="imgwrap">
+            <img class="lazy" src="img/2024-12-19_01.jpeg" />
+          </div>
+          <div class="text-content">
+            <p>
+              구석에 쌓아둔 나무 목재가 많아 무려 캣타워를 만들어 주었다. 깔리를
+              위해 뭐든지 다 할 기세. 발 돋움대가 약간 부실한 건 고쳐야겠다.
+              깔리는 높이가 마음에 드는지 캣타워에 올라가 우리를 관찰하기도
+              한다.
+            </p>
+          </div>
+          <div class="date-content">2024-12-19</div>
+        </div>
+        <!-- K K A L I B R E A K -->
+      </div>
+      <!-- K K A L I B R E A K -->
+      <!-- K K A L I B R E A K -->
+      <!-- K K A L I B R E A K -->
+      <!-- K K A L I B R E A K -->
+      <!-- K K A L I B R E A K -->
+      <div
+        id="noArticlesMessage"
+        style="display: none; text-align: center; margin: 0 auto"
+      ></div>
+      <!-- K K A L I B R E A K -->
+
+      <div class="kkalisFavorite">
+        <h2 id="favorite">✿˚⋱ kkali's Favorite Snack ⋰˚✿</h2>
+        <div class="kkali_items favorite">
+          <figure>
+            <img class="lazy" src="img/snack-00.JPG" alt="츄르" />
+            <figcaption>INABA, CIAO ちゅ～る</figcaption>
+          </figure>
+          <figure>
+            <img class="lazy" src="img/snack-02.jpg" alt="야끼믹스" />
+            <figcaption>
+              INABA, 야끼믹스 가다랑어포＆가리비＆오징어 맛
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="lazy" src="img/catgrass.jpg" alt="캣그라스" />
+            <figcaption>밀, 귀리</figcaption>
+          </figure>
+          <figure>
+            <img class="lazy" src="img/snack-01.jpg" alt="월간스틱" />
+            <figcaption>월간스틱 <br />(gifted by 표혜연)</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="kkalisFavorite">
+        <h2 id="toy">✿˚⋱ kkali's Toy ⋰˚✿</h2>
+        <div class="kkali_items toy">
+          <figure>
+            <img class="lazy" src="img/toy-04.png" alt="키치앤캣 제비나비" />
+            <figcaption>키치앤캣, 제비나비</figcaption>
+          </figure>
+          <figure>
+            <img class="lazy" src="img/toy-05.png" alt="키치앤캣 털개미" />
+            <figcaption>키치앤캣, 털개미</figcaption>
+          </figure>
+          <figure>
+            <img class="lazy" src="img/toy-06.jpg" alt="키치앤캣 꺽다리벌레" />
+            <figcaption>키치앤캣, 꺽다리벌레</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="img/toy-01.png"
+              alt="동결건조 마따따비 부들 고양이 낚시대"
+            />
+            <figcaption>동결건조 마따따비 부들 고양이 낚시대</figcaption>
+          </figure>
+          <figure>
+            <img
+              class="lazy"
+              src="img/toy-3balls.png"
+              alt="회전 공 놀이 장난감"
+            />
+            <figcaption>회전 공 놀이 장난감</figcaption>
+          </figure>
+          <figure>
+            <img
+              class="lazy"
+              src="img/toy-02.png"
+              alt="오뚝이 노즈워크 간식 로봇 장난감"
+            />
+            <figcaption>오뚝이 노즈워크 간식 로봇 장난감</figcaption>
+          </figure>
+          <figure>
+            <img class="lazy" src="img/ball.png" alt="스크래치 볼" />
+            <figcaption>스크래치 볼</figcaption>
+          </figure>
+          <figure>
+            <img class="lazy" src="img/box.png" alt="구멍을 뚫은 박스" />
+            <figcaption>구멍을 뚫은 박스<br />(made by 신나리)</figcaption>
+          </figure>
+          <figure>
+            <img class="lazy" src="img/kashakasha.jpeg" alt="카샤카샤" />
+            <figcaption>
+              Petz Route, 카샤카샤 재롱스틱<br />(gifted by 표혜연)
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="kkalisFavorite">
+        <h2 id="space">✿˚⋱ What's in kkali's Space ⋰˚✿</h2>
+        <div class="kkali_items space">
+          <figure>
+            <img class="lazy" src="img/house.jpg" alt="켄넬과 담요" />
+            <figcaption>켄넬과 담요를 덮은 누더기 집</figcaption>
+          </figure>
+          <figure>
+            <img class="lazy" src="img/toilet.jpg" alt="화장실" />
+            <figcaption>화장실<br />(gifted by 정주윤)</figcaption>
+          </figure>
+          <figure>
+            <img class="lazy" src="img/ceramickkali.jpg" alt="세라믹 깔리" />
+            <figcaption>
+              세라믹 깔리<br />(gifted by
+              <a href="https://www.instagram.com/poyccir/" target="_blank"
+                >CIR</a
+              >)
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="kkalisFavorite">
+        <h2 id="friends">✿˚⋱ Cat Friends Ending with '리' ⋰˚✿</h2>
+        <div class="kkali_items lee_friend">
+          <figure>
+            <img class="lazy" src="img/friend_kkali.png" alt="깔리" />
+            <figcaption>깔리(kkali)</figcaption>
+          </figure>
+          <figure>
+            <img class="lazy" src="img/friend_billy.jpg" alt="빌리" />
+            <figcaption>
+              <a href="https://www.instagram.com/everybilly/" target="_blank"
+                >빌리(billy)</a
+              >
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="lazy" src="img/friend_ollie.jpg" alt="올리" />
+            <figcaption>
+              <a href="https://www.instagram.com/everyollie/" target="_blank">
+                올리(ollie)</a
+              >
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="lazy" src="img/friend_jerry.jpg" alt="제리" />
+            <figcaption>
+              <a
+                href="https://www.instagram.com/gonaerijerry//"
+                target="_blank"
+              >
+                제리(jerry)</a
+              >
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <img class="tail" id="tail" src="img/tail-01.png" alt="tail" />
+      <img
+        class="right-hand"
+        id="right-hand"
+        src="img/right-hand.png"
+        alt="right-hand"
+      />
+      <p id="footer">Last Updated 2026-02-21</p>
+      <!-- <img class="lazy" class="face" id="face" src="img/face.png" alt="face"> -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
