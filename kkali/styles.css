@@ -1,0 +1,288 @@
+html {
+  width: 100%;
+  /* overflow-x: hidden; */
+}
+
+* {
+  word-break: keep-all;
+  box-sizing: border-box;
+  font-size: 15px !important;
+  line-height: 1.5;
+}
+.loading-text {
+  font-size: 24px;
+  color: #333;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+.loading-text span {
+  top: 50%;
+  transform: translate(0, -50%);
+  position: relative;
+}
+body {
+  overflow-x: hidden;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* background: lightyellow; */
+  background-color: rgb(91, 91, 91);
+  background-color: papayawhip;
+}
+
+button {
+  background-color: burlywood;
+  cursor: pointer;
+  margin: 2px 0;
+  border-radius: 6px;
+  border: 1px solid;
+}
+button a {
+  color: black;
+  text-decoration: none;
+}
+#sound-button {
+  background-color: lightgray;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* background-image: url("/img/kkali_profile-01.png");
+  background-size: contain; */
+}
+
+.article {
+  display: flex;
+  width: calc(20% - 10px);
+  flex-direction: column; /* 내부 요소를 세로로 쌓음 */
+  align-items: center; /* 내부 요소를 중앙 정렬 */
+  margin: 5px; /* 각 아티클 간의 여백 설정 */
+}
+
+.imgwrap,
+.text-content,
+.date-content {
+  width: 100%; /* 내부 요소 너비를 아티클 너비와 동일하게 설정 */
+}
+
+.imgwrap {
+  cursor: pointer;
+  text-align: center;
+}
+
+.article img {
+  width: 100%;
+  height: auto;
+  border-radius: 500px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  margin: 0 auto;
+  line-height: 1.5;
+}
+h2 {
+  padding: 5px 0;
+  margin: 5px 0;
+  width: 100%;
+  text-align: center;
+  /* background-color: brown;
+color: white; */
+}
+
+a {
+  color: brown;
+}
+p {
+  margin-top: 0;
+}
+
+nav {
+  position: sticky;
+  top: 30px;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+#profile {
+  height: 40vh;
+  cursor: pointer;
+}
+#profileWrap {
+  width: 100%;
+  text-align: center;
+  /* box-shadow: inset 0px 0px 5px #666; */
+  /* border-radius: 50%;
+  background-image: url("img/kkali_profile-02.jpg");
+  background-size: contain; */
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, 0px);
+}
+#title {
+  text-align: center;
+}
+#title a {
+  font-size: 24px !important;
+  word-spacing: 20px;
+  letter-spacing: 5px;
+}
+.kkali_items {
+  /* display: flex;
+  flex-wrap: wrap;  */
+  width: 100%;
+  text-align: center;
+  /* background: white; */
+}
+.kkali_items figure {
+  /* display: flex; */
+  width: 10%; /* 각 아티클 너비를 10%로 설정 */
+  flex-direction: column; /* 내부 요소를 세로로 쌓음 */
+  align-items: center; /* 내부 요소를 중앙 정렬 */
+  margin: 5px; /* 각 아티클 간의 여백 설정 */
+  display: inline-block;
+}
+.kkali_items figure img {
+  width: 100%;
+  border-radius: 20px;
+}
+.kkali_items figcaption {
+  font-size: 15px;
+  word-break: break-all;
+}
+.indexWrap {
+  position: fixed;
+  top: 0px;
+  height: 20px;
+  margin: 0 5px;
+  z-index: 9999;
+}
+.index {
+  margin: 0 5px;
+  background-color: white;
+}
+.instruction {
+  text-align: center;
+  width: 100%;
+  margin: 5px;
+}
+
+.tail {
+  width: 500px;
+  height: auto;
+  left: -50px;
+  top: 300px;
+  position: absolute;
+  transition: top 0.5s ease;
+  animation: slide-in 5s infinite alternate;
+}
+
+.right-hand {
+  width: 400px;
+  height: auto;
+  right: -50px;
+  top: 100px;
+  position: absolute;
+  transition: top 0.5s ease;
+  animation: slide-in-right 5s infinite alternate;
+}
+
+.face {
+  width: 500px;
+  height: auto;
+  bottom: -10px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  transition: bottom 0.5s ease;
+  animation: slide-up 5s infinite alternate;
+}
+
+.caption {
+  color: gray;
+}
+
+#noArticlesMessage {
+  margin: 30vh 0 !important;
+  font-weight: bold;
+}
+#footer {
+  text-align: center;
+  margin: 24px 0;
+}
+@keyframes slide-in {
+  from {
+    left: -200px;
+  }
+  to {
+    left: -50px;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    right: -200px;
+  }
+  to {
+    right: -50px;
+  }
+}
+@keyframes slide-up {
+  from {
+    bottom: -100px;
+  }
+  to {
+    bottom: -10px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .article {
+    width: calc(25% - 10px);
+  }
+  .kkali_items figure {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    position: static;
+  }
+  .profileWrap {
+    /* 기존의 .profile을 .profileWrap으로 변경 */
+    position: relative;
+    transform: translate(0px, 0px);
+  }
+  #profile {
+    width: 100vw;
+    height: auto;
+  }
+  .tail {
+    animation: none;
+    width: 300px;
+  }
+  .right-hand {
+    animation: none;
+    width: 250px;
+    right: 0px;
+  }
+  .article {
+    width: calc(50% - 10px);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  nav {
+    top: 45px;
+  }
+  .kkali_items figure {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .article {
+    width: calc(100% - 10px);
+  }
+}
