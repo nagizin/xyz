@@ -2,7 +2,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto Mono", monospace;
 }
+
 a {
   text-decoration: none;
 }
@@ -22,17 +24,15 @@ body {
 
 .item {
   max-width: 250px;
-  border: 2px outset #ddd;
-  border-top: 2px outset grey;
-  border-left: 2px outset grey;
+  border: 1px solid black;
   padding: 8px;
   box-sizing: border-box;
   cursor: pointer;
 }
 .item:hover {
-  border: 4px outset #ddd;
-  border-top: 4px outset grey;
-  border-left: 4px outset grey;
+  border: 3px outset #ddd;
+  border-top: 3px outset grey;
+  border-left: 3px outset grey;
 }
 .item img {
   width: 100%;
@@ -42,7 +42,7 @@ body {
 }
 
 .caption {
-  margin-top: 6px;
+  margin: 6px;
   font-size: 14px;
   text-align: center;
   display: block;
