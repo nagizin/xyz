@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0"
+    />
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="starbuckseverywhere" />
+    <meta
+      name="description"
+      content="Starbucks visited by Naree. Since 2026."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://nagizin.xyz/starbuckseverywhere/"
+    />
+    <meta property="og:title" content="starbuckseverywhere" />
+    <meta
+      property="og:description"
+      content="Starbucks visited by Naree. Since 2026."
+    />
+    <meta
+      property="og:image"
+      content="https://nagizin.xyz/starbuckseverywhere/img/sns.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://nagizin.xyz/starbuckseverywhere/"
+    />
+    <meta property="twitter:title" content="starbuckseverywhere" />
+    <meta
+      property="twitter:description"
+      content="Starbucks visited by Naree. Since 2026."
+    />
+    <meta
+      property="twitter:image"
+      content="https://nagizin.xyz/starbuckseverywhere/img/sns.jpg"
+    />
+
+    <title>starbuckseverywhere</title>
+
+    <link rel="stylesheet" href="./styles.css?ver=2.5" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <span id="language"><a>KR</a> | <a href="index_en.html">EN</a></span>
+      <h1>스타벅스는 어디에나 있습니다</h1>
+      <div class="summary" id="summary"></div>
+    </header>
+
+    <!-- <section class="stats-grid">
+      <div class="stat-card">
+        <h3>가장 자주 가는 매장</h3>
+        <p>스타벅스 서울숲역점</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>가장 자주 먹는 메뉴</h3>
+        <p></p>
+      </div>
+
+      <div class="stat-card">
+        <h3>가장 최근의 매장</h3>
+        <p>스타벅스 서울숲역점</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>가장 최근에 방문한 날짜</h3>
+        <p></p>
+      </div>
+
+      <div class="stat-card">
+        <h3>현재까지 스타벅스를 방문한 도시</h3>
+        <p></p>
+      </div>
+
+      <div class="stat-card">
+        <h3>현재까지 스타벅스에서 마신 커피의 양</h3>
+        <p></p>
+      </div>
+
+      <div class="stat-card">
+        <h3>현재까지 스타벅스에서 지출한 돈</h3>
+        <p></p>
+      </div>
+
+      <div class="stat-card">
+        <h3>여분 카드</h3>
+        <p></p>
+      </div>
+    </section> -->
+
+    <table>
+      <thead>
+        <tr>
+          <th>사진</th>
+          <th>날짜</th>
+          <th>위치</th>
+          <th>도시</th>
+          <th>마신 것</th>
+          <th>온도</th>
+          <th class="mobileNone">수량</th>
+          <th>비용</th>
+          <th>와 함께</th>
+          <th class="mobileNone">메모</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+      <img class="modal-content" id="modalImg" />
+    </div>
+
+    <!-- Note Modal -->
+    <div id="noteModal" class="modal">
+      <div class="note-box">
+        <p id="noteContent"></p>
+      </div>
+    </div>
+
+    <footer>
+      이 웹사이트는
+      <a href="https://www.nagizin.com/">신나리</a>가 Winter의 프로젝트
+      <a href="https://www.starbuckseverywhere.net/">starbuckseverywhere.net</a
+      >에서 영감을 받아 제작 및 관리하고 있습니다. 2026년부터 운영 중입니다.
+      웹사이트 최종 수정 2026-02-20
+    </footer>
+
+    <script src="script_kr.js?ver=2.5"></script>
+    <script src="screensaver.js?ver=2.5"></script>
+  </body>
+</html>
